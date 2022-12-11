@@ -1,5 +1,5 @@
 # SMR2Compiler
-Compiler and emulator written in JavaScript for a fictional processor called ProcSMR2. Originally programmed between February 18-24th of 2021
+Compiler and emulator written in JavaScript for a fictional processor called ProcSMR2. Originally sparsely programmed between February 5-24th of 2021
 
 This was originally an assignment I did many years ago in high school. There was also a second version of this, with many more instructions and a memory
 management, where you had to load a value from memory into a register. If I recall correctly, it was possible to store up to 65536 bytes. I might reupload
