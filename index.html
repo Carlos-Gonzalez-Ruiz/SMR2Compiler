@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Fichero HTML por Carlos González Ruiz -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Compilador</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script defer src="code.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			<img src="logo.png">
+			<h1>Online SMR2 Compiler</h1>
+			<p>Online compiler and emulator to generate and run binaries for ProcSMR2</p>
+		</div>
+		<div class="content">
+			<p>Write the low level SMR2 code that you wish to compile to machine code for the microcontroller ProcSMR2. Once you think your code is ready to be executed, click on the compile button to get the resulting binary. <br><br>After the machine code has been generated, click on the Execute button to run it. <br><span style="color: gray; font-size: 12px;">(Note that you can also write in the binary box. This is not highly recommended due to possible mistakes which may result in unexpected output)</span></p> <p>See <i>readme.txt</i> file for further information about SMR2 language.</p>
+			<div style="display: flex;">
+				<div style="flex: 2;" class="box">
+					<h3>SMR2 code</h3>
+					<textarea id="code" spellcheck="false"></textarea>
+					<input type="button" value="Compile" id="compile">
+					<input type="button" value="Execute" id="exec">
+				</div>
+				<div style="flex: 1;" class="box">
+					<h3>Binary</h3>
+					<textarea id="bin"></textarea>
+				</div>
+			</div>
+			<div id="errors"></div>
+			
+			<div class="box">
+				<h3>Output</h3>
+				<textarea id="out"></textarea>
+				<input type="button" id="clear" value="Clear">
+			</div>
+			<p><span style="color: gray; font-size: 12px;">By Carlos González Ruiz</span></p>
+		</div>
+	</body>
+</html>
